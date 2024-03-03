@@ -84,12 +84,12 @@
 			<configuration> 
 				<archive> 
 					<manifest> 
-					  <mainClass>com.selenium.test.facebook_demo.App</mainClass> 
+					  <mainClass>insureme.capstone_selenium.App</mainClass> 
 			        </manifest> 
 			     </archive> 
 			 <descriptorRefs> 
 				<descriptorRef>jar-with-dependencies</descriptorRef>
-				 </descriptorRefs> 
+		         </descriptorRefs> 
 		   </configuration>
 		 </plugin>
       </plugins>
