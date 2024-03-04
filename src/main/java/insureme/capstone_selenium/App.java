@@ -30,7 +30,7 @@ public class App
 	        
 	        System.out.println("Script Execution Started...");
 	        
-	        driver.get("http://18.212.88.163:8085/contact.html");
+	        driver.get("http://107.21.193.163:8085/contact.html");
 	        
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	        
