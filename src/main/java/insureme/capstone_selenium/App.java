@@ -18,8 +18,8 @@ public class App
 {
 	 public static void main( String[] args ) throws InterruptedException
 	    {
-	                       
-		    WebDriverManager.chromedriver().setup();
+	            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome-stable");           
+		    //WebDriverManager.chromedriver().setup();
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
 	        chromeoptions.addArguments("--headless");
