@@ -18,7 +18,7 @@ public class App
 {
 	 public static void main( String[] args ) throws InterruptedException
 	    {
-	            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome-stable");           
+	            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");           
 		    //WebDriverManager.chromedriver().setup();
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
