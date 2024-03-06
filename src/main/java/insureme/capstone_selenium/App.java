@@ -23,6 +23,12 @@ public class App
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
 	        chromeoptions.addArguments("--headless");
+		    chromeoptions.addArguments("start-maximized"); // open Browser in maximized mode
+                    chromeoptions.addArguments("disable-infobars"); // disabling infobars
+ 			chromeoptions.addArguments("--disable-extensions"); // disabling extensions
+			chromeoptions.addArguments("--disable-gpu"); // applicable to windows os only
+		chromeoptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		chromeoptions.addArguments("--no-sandbox"); // Bypass OS security model
 	        
 	        WebDriver driver = new ChromeDriver(chromeoptions);
 	        
