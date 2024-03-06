@@ -18,9 +18,7 @@ public class App
 {
 	 public static void main( String[] args ) throws InterruptedException
 	    {
-	                
-	        //System.setProperty("webdriver.chrome.driver", "C:\\Prathap\\Azure\\Bootcamp-TCS\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-	        
+	                       
 		    WebDriverManager.chromedriver().setup();
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
@@ -28,20 +26,16 @@ public class App
 	        
 	        WebDriver driver = new ChromeDriver(chromeoptions);
 	        
-	        System.out.println("Script Execution Started...");
+	        System.out.println(" Execution Started...");
 	        
-	        driver.get("http://107.21.193.163:8085/contact.html");
+	        driver.get("http://18.118.213.148:8081/contact.html");
 	        
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	        
 	        
-	        //driver.findElement(By.className("nav-click")).click();
-	        
-	        //driver.findElement(By.cssSelector("a[id^='nav-click']")).click();
-	        
 	        Thread.sleep(1000);
 	        
-	        driver.findElement(By.id("inputName")).sendKeys("Prathap G");
+	        driver.findElement(By.id("inputName")).sendKeys("Vajrala");
 	        
 	        Thread.sleep(1000);
 	        
@@ -49,22 +43,21 @@ public class App
 	        
 	        Thread.sleep(1000);
 	        
-	        driver.findElement(By.id("inputMail")).sendKeys("admin@xyz.com");
+	        driver.findElement(By.id("inputMail")).sendKeys("vaj@xyz.com");
 	        
 	        Thread.sleep(1000);
 	        
-	        driver.findElement(By.id("inputMessage")).sendKeys("I am interested");
+	        driver.findElement(By.id("inputMessage")).sendKeys("allow me");
 	        
 	        Thread.sleep(1000);
 	        
 	        
 	        driver.findElement(By.id("my-button")).click();
 	        
-	        //driver.findElement(By.className("btn-box")).click();
-	                          
+	                                  
 	       	Thread.sleep(3000);
 	        
-	        System.out.println("Sent - Execution Completed");
+	        System.out.println("msg Sent");
 	        
 	        driver.quit();
 	    }
