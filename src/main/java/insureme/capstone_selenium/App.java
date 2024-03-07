@@ -18,7 +18,7 @@ public class App
 {
 	 public static void main( String[] args ) throws InterruptedException
 	    {
-	            System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver-linux64/chromedriver");           
+	            System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver-linux64/");           
 		    //WebDriverManager.chromedriver().setup();
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
