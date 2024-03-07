@@ -18,18 +18,13 @@ public class App
 {
 	 public static void main( String[] args ) throws InterruptedException
 	    {
-	            System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver-linux64/");           
+	            //System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver-linux64/"); 
+		    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		    //WebDriverManager.chromedriver().setup();
 		    
 	        ChromeOptions chromeoptions = new ChromeOptions();
 	        chromeoptions.addArguments("--headless");
-		    chromeoptions.addArguments("start-maximized"); // open Browser in maximized mode
-                    chromeoptions.addArguments("disable-infobars"); // disabling infobars
- 			chromeoptions.addArguments("--disable-extensions"); // disabling extensions
-			chromeoptions.addArguments("--disable-gpu"); // applicable to windows os only
-		chromeoptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		chromeoptions.addArguments("--no-sandbox"); // Bypass OS security model
-	        
+		    
 	        WebDriver driver = new ChromeDriver(chromeoptions);
 	        
 	        System.out.println(" Execution Started...");
